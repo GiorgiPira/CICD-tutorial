@@ -32,7 +32,7 @@ jobs:
 
       - name: TestRun
         run: |
-          out=$(docker run --rm expo:1.0 2 10)
+          out=$(./sdo-expo 2 10)
           echo "$out"
           test "$out" = "2 ^ 10 = 1024"
 
